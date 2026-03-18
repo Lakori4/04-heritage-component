@@ -26,8 +26,8 @@ const Page = () => {
       </div>
       <div className="comp">
       <h1>Shopping cart</h1>
-      {list.map((e) => (<h2 key={e.id}>{e.name}</h2>))}
       {products.map((p) => (<Product key={p} productName={p} list={list} setList={setList}/>))}
+      {list.map((e) => (<h2 className="bought" onClick={() => (setList(list.filter( p => p.id !== e.id )))} key={e.id}>{e.name}</h2>))}
       </div>
 
     </div>

@@ -1,5 +1,7 @@
 
 
 .product:hover {
-    cursor: pointer;
+    cursor:crosshair;
+    border: 200px;
+    border-color: rgb(0, 255, 170);
 }

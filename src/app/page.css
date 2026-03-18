@@ -11,3 +11,9 @@
 .comp {
     flex-direction: column;
 }
+
+.bought:hover {
+    text-decoration-line:line-through ;
+    color: red;
+    cursor: pointer;
+}
