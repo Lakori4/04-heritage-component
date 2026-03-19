@@ -5,11 +5,21 @@
  min-height: 100vh;
  flex-direction: row;
  gap: 20px;
+ align-items:center;
+ align-content: space-around;
   
 }
 
-.comp {
+[class^="comp"] {
+    display: flex;
     flex-direction: column;
+    margin:auto
+}
+
+.compShop {
+
+    flex-direction: row;
+    gap: 20px
 }
 
 .bought:hover {
